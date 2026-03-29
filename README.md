@@ -1,12 +1,11 @@
-# dishDrop (Vending Recipe App)
+# dishDrop (Vending Machine Recipe App)
 
-A fully functional, user-centric recipe platform featuring a unique brutalist/retro aesthetic with a functional "PUSH" flap for recipe cards. 
+A user-centric recipe platform that's vending-machine themed. 
 
 ## Features
-- **User Authentication**: Secure login and registration.
+- **User Authentication**: Login and registration to upload recipes and annotate on existing ones.
 - **Recipe Management**: Create, view, and share recipes.
-- **Community Engagement**: Robust comment system for community interaction.
-- **Unique Aesthetic**: Retro/brutalist UI design (#FDFD96 background, retro typography).
+- **Community Engagement**: Comment system for community.
 
 ## Tech Stack
 - **Frontend**: React (Vite)
