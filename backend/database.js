@@ -26,10 +26,14 @@ const db = new sqlite3.Database(dbPath, (err) => {
                 category TEXT, /* Appetizers, Mains, Desserts */
                 dietary TEXT, /* Vegetarian, Vegan, Gluten-Free etc */
                 instructions TEXT,
+                description TEXT, /* Personalised funny tagline */
                 author_id INTEGER, /* If null, it's a base system recipe */
                 is_original BOOLEAN DEFAULT 1,
                 FOREIGN KEY (author_id) REFERENCES users(id)
             )`);
+            
+            // Try to add description if it doesn't exist (for existing DBs)
+            db.run("ALTER TABLE recipes ADD COLUMN description TEXT", (err) => {});
             
             // Ingredients table (Global catalog)
             db.run(`CREATE TABLE IF NOT EXISTS ingredients (

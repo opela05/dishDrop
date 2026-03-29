@@ -22,6 +22,7 @@ function Profile() {
   const [rCategory, setRCategory] = useState('Mains');
   const [rDietary, setRDietary] = useState('None');
   const [rInstr, setRInstr] = useState('');
+  const [rDesc, setRDesc] = useState('');
   const [rIngreds, setRIngreds] = useState([{ name: '', quantity: '' }]);
 
   const token = localStorage.getItem('token');
@@ -84,7 +85,7 @@ function Profile() {
     e.preventDefault();
     const payload = {
       title: rTitle, image_url: rImage, prep_time: rPrep,
-      category: rCategory, dietary: rDietary, instructions: rInstr
+      category: rCategory, dietary: rDietary, instructions: rInstr, description: rDesc
     };
     axios.put(`${API_BASE}/recipes/${editingRecipe.id}`, payload, { headers: { Authorization: `Bearer ${token}` } })
       .then(() => {
@@ -118,6 +119,7 @@ function Profile() {
     setRCategory(r.category);
     setRDietary(r.dietary);
     setRInstr(r.instructions);
+    setRDesc(r.description || '');
     setShowAddForm(false);
   };
 
@@ -125,7 +127,7 @@ function Profile() {
     e.preventDefault();
     const payload = {
       title: rTitle, image_url: rImage, prep_time: rPrep,
-      category: rCategory, dietary: rDietary, instructions: rInstr,
+      category: rCategory, dietary: rDietary, instructions: rInstr, description: rDesc,
       ingredients: rIngreds.filter(i => i.name.trim() !== '')
     };
 
@@ -177,7 +179,7 @@ function Profile() {
             <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '3px solid black', paddingBottom: '1rem', marginBottom: '1rem'}}>
               <h3 style={{fontFamily: 'var(--font-header)', fontSize: '2rem'}}>My Contributions</h3>
               <button 
-                onClick={() => { setShowAddForm(!showAddForm); setEditingRecipe(null); setRTitle(''); setRImage(''); setRInstr(''); }}
+                onClick={() => { setShowAddForm(!showAddForm); setEditingRecipe(null); setRTitle(''); setRImage(''); setRInstr(''); setRDesc(''); }}
                 style={{background: 'black', color: 'white', padding: '5px 15px', borderRadius: '20px', cursor: 'pointer', border: 'none', display: 'flex', alignItems: 'center', gap: '5px', fontWeight: 'bold'}}
               >
                 <PlusCircle size={16} /> Add Recipe
@@ -206,6 +208,7 @@ function Profile() {
                     </select>
                   </div>
                   <input type="text" placeholder="Dietary (ex: Vegan, None)" required value={rDietary} onChange={e => setRDietary(e.target.value)} style={{padding: '10px', borderRadius: '4px', border: '1px solid #ccc'}} />
+                  <input type="text" placeholder="Personalized Funny Tagline" value={rDesc} onChange={e => setRDesc(e.target.value)} style={{padding: '10px', borderRadius: '4px', border: '1px solid #ccc'}} />
                   <textarea placeholder="Instructions..." required value={rInstr} onChange={e => setRInstr(e.target.value)} style={{padding: '10px', borderRadius: '4px', border: '1px solid #ccc', minHeight: '100px', marginTop: '1rem'}} />
                   <button type="submit" style={{background: 'orange', color: 'black', padding: '10px', fontWeight: 'bold', border: '2px solid black', borderRadius: '4px', cursor: 'pointer', marginTop: '1rem'}}>UPDATE RECIPE</button>
                 </div>
@@ -231,6 +234,7 @@ function Profile() {
                     </select>
                   </div>
                   <input type="text" placeholder="Dietary (ex: Vegan, None)" required value={rDietary} onChange={e => setRDietary(e.target.value)} style={{padding: '10px', borderRadius: '4px', border: '1px solid #ccc'}} />
+                  <input type="text" placeholder="Personalized Funny Tagline" value={rDesc} onChange={e => setRDesc(e.target.value)} style={{padding: '10px', borderRadius: '4px', border: '1px solid #ccc'}} />
                   
                   <div style={{marginTop: '1rem'}}>
                     <strong>Ingredients:</strong>

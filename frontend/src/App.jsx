@@ -265,7 +265,7 @@ function App() {
                 <div className="top-section">
                   <div className="title-area">
                     <h1 className="retro-title">{dispensedRecipe.title}</h1>
-                    <p className="retro-subtitle">Inspired by global cuisines, this {dispensedRecipe.category.toLowerCase()} is perfect for your next meal.</p>
+                    <p className="retro-subtitle">{dispensedRecipe.description || "A certified banger for your tastebuds."}</p>
                   </div>
                   <div className="ingredients-area">
                     <h2 className="hand-title">Ingredients:</h2>

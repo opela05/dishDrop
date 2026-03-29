@@ -132,12 +132,12 @@ app.get('/api/recipes', (req, res) => {
 });
 
 app.post('/api/recipes', authenticateToken, (req, res) => {
-    const { title, image_url, prep_time, category, dietary, instructions, ingredients } = req.body;
+    const { title, image_url, prep_time, category, dietary, instructions, description, ingredients } = req.body;
     
     db.serialize(() => {
         db.run(
-            'INSERT INTO recipes (title, image_url, prep_time, category, dietary, instructions, author_id) VALUES (?, ?, ?, ?, ?, ?, ?)',
-            [title, image_url, prep_time, category, dietary, instructions, req.user.id],
+            'INSERT INTO recipes (title, image_url, prep_time, category, dietary, instructions, description, author_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+            [title, image_url, prep_time, category, dietary, instructions, description, req.user.id],
             function(err) {
                 if (err) return res.status(500).json({ error: err.message });
                 const recipeId = this.lastID;
@@ -166,10 +166,10 @@ app.put('/api/recipes/:id', authenticateToken, (req, res) => {
         if (!recipe) return res.status(404).json({ error: 'Recipe not found' });
         if (recipe.author_id !== req.user.id) return res.status(403).json({ error: 'Unauthorized' });
 
-        const { title, image_url, prep_time, category, dietary, instructions } = req.body;
+        const { title, image_url, prep_time, category, dietary, instructions, description } = req.body;
         db.run(
-            'UPDATE recipes SET title = ?, image_url = ?, prep_time = ?, category = ?, dietary = ?, instructions = ? WHERE id = ?',
-            [title, image_url, prep_time, category, dietary, instructions, req.params.id],
+            'UPDATE recipes SET title = ?, image_url = ?, prep_time = ?, category = ?, dietary = ?, instructions = ?, description = ? WHERE id = ?',
+            [title, image_url, prep_time, category, dietary, instructions, description, req.params.id],
             function(err) {
                 if (err) return res.status(500).json({ error: err.message });
                 res.json({ message: "Recipe updated!" });
