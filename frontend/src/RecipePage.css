@@ -1,0 +1,186 @@
+.retro-page {
+  font-family: 'Inter', sans-serif;
+  background: white;
+  color: black;
+  min-height: auto;
+  padding: 2rem 4rem;
+}
+
+.retro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.retro-logo {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.retro-nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.retro-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.top-section {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.title-area {
+  flex: 1;
+}
+
+.retro-title {
+  font-family: 'VT323', monospace;
+  font-size: 6rem;
+  line-height: 0.85;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+.retro-subtitle {
+  font-size: 1.1rem;
+  max-width: 400px;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+
+.ingredients-area {
+  flex: 1.5;
+}
+
+.hand-title {
+  font-family: 'Caveat', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  text-align: center;
+}
+
+.ingredient-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ingredient-icon {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.ingredient-label {
+  font-size: 1rem;
+}
+
+.qty {
+  font-weight: bold;
+}
+
+.retro-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 3rem 0;
+}
+
+.bottom-section {
+  display: flex;
+  gap: 4rem;
+}
+
+.image-area {
+  flex: 1;
+}
+
+.image-area img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.instructions-area {
+  flex: 1;
+}
+
+.instructions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.instruction-step {
+  display: flex;
+  gap: 1.5rem;
+  line-height: 1.5;
+}
+
+.step-number {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.retro-footer {
+  margin-top: 4rem;
+  border-top: 1px solid #eaeaea;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-links {
+  display: flex;
+  gap: 3rem;
+  font-family: 'VT323', monospace;
+  font-size: 2.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-copyright {
+  margin-left: auto;
+  font-size: 1.5rem;
+  color: #999;
+}
+
+.loading-retro {
+  font-family: 'VT323', monospace;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .top-section, .bottom-section {
+    flex-direction: column;
+  }
+}

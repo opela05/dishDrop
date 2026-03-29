@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Avocado Toast with Lemon",
+    "image_url": "https://images.unsplash.com/photo-1588137378633-dea1336ce1e2",
+    "prep_time": "5 min",
+    "category": "Breakfast",
+    "dietary": "Vegan",
+    "ingredients": "1 slice Whole Grain Bread | 0.5 Avocado | 1 tsp Lemon Juice | 0.25 tsp Salt | 0.25 tsp Black Pepper | 1 tsp Olive Oil",
+    "instructions": "Toast the bread until golden and crisp. In a small bowl mash the avocado with lemon juice, salt, and black pepper until smooth but slightly chunky. Spread the avocado mixture evenly over the toast. Drizzle olive oil on top and serve immediately."
+  },
+  {
+    "title": "Garlic Butter Pasta",
+    "image_url": "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5",
+    "prep_time": "15 min",
+    "category": "Mains",
+    "dietary": "Vegetarian",
+    "ingredients": "200 g Spaghetti | 2 tbsp Butter | 3 Garlic Cloves | 0.5 tsp Salt | 0.25 tsp Black Pepper | 2 tbsp Parmesan Cheese | 1 tbsp Parsley",
+    "instructions": "Cook spaghetti in salted boiling water according to package instructions until al dente. In a skillet melt butter over medium heat and sauté minced garlic for about one minute until fragrant. Drain the pasta and add it to the skillet. Toss the pasta with salt, pepper, grated parmesan, and chopped parsley. Mix well and serve warm."
+  },
+  {
+    "title": "Banana Peanut Butter Smoothie",
+    "image_url": "https://images.unsplash.com/photo-1553530666-ba11a7da3888",
+    "prep_time": "5 min",
+    "category": "Beverages",
+    "dietary": "Vegetarian",
+    "ingredients": "1 Banana | 1 tbsp Peanut Butter | 1 cup Milk | 1 tsp Honey | 3 Ice Cubes",
+    "instructions": "Place the banana, peanut butter, milk, honey, and ice cubes into a blender. Blend until smooth and creamy. Taste and adjust sweetness if needed. Pour into a glass and serve immediately."
+  },
+  {
+    "title": "Tomato Basil Salad",
+    "image_url": "https://images.unsplash.com/photo-1505253716362-afaea6fc5b3c",
+    "prep_time": "10 min",
+    "category": "Appetizers",
+    "dietary": "Vegan",
+    "ingredients": "2 cups Cherry Tomatoes | 0.25 cup Fresh Basil Leaves | 1 tbsp Olive Oil | 1 tsp Balsamic Vinegar | 0.25 tsp Salt | 0.25 tsp Black Pepper",
+    "instructions": "Slice the cherry tomatoes in half and place them in a bowl. Add fresh basil leaves. Drizzle olive oil and balsamic vinegar over the tomatoes. Season with salt and pepper. Toss gently to combine and serve fresh."
+  },
+  {
+    "title": "Scrambled Eggs with Spinach",
+    "image_url": "https://images.unsplash.com/photo-1608039755401-742074f0548d",
+    "prep_time": "10 min",
+    "category": "Breakfast",
+    "dietary": "Vegetarian",
+    "ingredients": "3 Eggs | 0.5 cup Spinach | 1 tbsp Butter | 0.25 tsp Salt | 0.25 tsp Black Pepper | 2 tbsp Milk",
+    "instructions": "Whisk the eggs with milk, salt, and pepper in a bowl. Heat butter in a nonstick pan over medium heat and sauté spinach until wilted. Pour the egg mixture into the pan. Stir gently and continuously until the eggs are softly scrambled. Remove from heat and serve warm."
+  },
+  {
+    "title": "Chickpea Lemon Salad",
+    "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
+    "prep_time": "10 min",
+    "category": "Salads",
+    "dietary": "Vegan",
+    "ingredients": "1 cup Chickpeas | 0.25 cup Cucumber | 0.25 cup Tomato | 1 tbsp Lemon Juice | 1 tbsp Olive Oil | 0.25 tsp Salt | 0.25 tsp Cumin",
+    "instructions": "Drain and rinse the chickpeas before placing them in a bowl. Add diced cucumber and tomato. Drizzle lemon juice and olive oil over the salad. Sprinkle salt and cumin. Toss everything together well and serve chilled."
+  },
+  {
+    "title": "Greek Yogurt Berry Bowl",
+    "image_url": "https://images.unsplash.com/photo-1488477181946-6428a0291777",
+    "prep_time": "5 min",
+    "category": "Desserts",
+    "dietary": "Vegetarian",
+    "ingredients": "1 cup Greek Yogurt | 0.5 cup Mixed Berries | 1 tbsp Honey | 2 tbsp Granola | 1 tsp Chia Seeds",
+    "instructions": "Add the Greek yogurt to a serving bowl. Top with mixed berries. Drizzle honey over the top. Sprinkle granola and chia seeds for crunch. Serve immediately."
+  },
+  {
+    "title": "Vegetable Stir Fry",
+    "image_url": "https://images.unsplash.com/photo-1512058564366-c9e3e046b9f9",
+    "prep_time": "15 min",
+    "category": "Mains",
+    "dietary": "Vegan",
+    "ingredients": "1 cup Broccoli | 0.5 cup Carrots | 0.5 cup Bell Peppers | 1 tbsp Soy Sauce | 1 tbsp Sesame Oil | 1 Garlic Clove | 1 tsp Ginger",
+    "instructions": "Heat sesame oil in a wok or skillet over medium-high heat. Add minced garlic and grated ginger and sauté briefly. Add broccoli, carrots, and bell peppers and stir fry for about five to six minutes until slightly tender. Pour in soy sauce and toss to coat the vegetables. Cook for another minute and serve hot."
+  },
+  {
+    "title": "Apple Cinnamon Oatmeal",
+    "image_url": "https://images.unsplash.com/photo-1517673132405-a56a62b18caf",
+    "prep_time": "10 min",
+    "category": "Breakfast",
+    "dietary": "Vegetarian",
+    "ingredients": "0.5 cup Rolled Oats | 1 cup Milk | 0.5 Apple | 1 tsp Honey | 0.25 tsp Cinnamon",
+    "instructions": "Combine oats and milk in a saucepan and cook over medium heat. Add diced apples while the oats cook. Stir occasionally until the oats become soft and creamy. Add cinnamon and honey and mix well. Serve warm."
+  },
+  {
+    "title": "Baked Sweet Potato",
+    "image_url": "https://images.unsplash.com/photo-1604908176997-431fa7c91c1d",
+    "prep_time": "5 min",
+    "category": "Sides",
+    "dietary": "Vegetarian",
+    "ingredients": "1 Sweet Potato | 1 tsp Olive Oil | 0.25 tsp Salt | 0.25 tsp Black Pepper | 1 tbsp Yogurt",
+    "instructions": "Preheat the oven to 200°C or 400°F. Wash the sweet potato and pierce it several times with a fork. Rub it with olive oil, salt, and black pepper. Bake in the oven for about forty minutes until tender. Slice it open and top with yogurt before serving."
+  }
+]
